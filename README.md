@@ -42,7 +42,7 @@ group2_in_ipam
 
 
 ## Creating .my.cnf
-This should get you started:
+This should get you started. Modify as required.
 
 ```
 $ cat .my.cnf
