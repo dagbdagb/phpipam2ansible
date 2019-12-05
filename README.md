@@ -17,7 +17,7 @@ The script is primarily meant to be used by ansible, but it can be run by the us
 
 Some of the binaries in the ansible suite of tools take an '-i fooo' argument. 'fooo' can be a static inventory file, formatted according to the ansible documentation. Or it can be a dynamic inventory script, like this.
 
-    ansible all -i ansible_phpipam_dynamic_inventory.py --list-hosts
+    ansible all -i phpipam2ansible.py --list-hosts
 
 Rather than typing all that on every invocation of an ansible command, you can set the 'inventory' variable in ansible.cfg to point at this script.
 
