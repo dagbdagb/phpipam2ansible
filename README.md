@@ -38,7 +38,9 @@ group1_in_ipam
 group2_in_ipam
 ```
 
-(Unsure if ansible permits underscores in groupnames, but you get the idea.)
+(Unsure if ansible permits underscores in groupnames, but you get the idea.) 
+[This](https://docs.ansible.com/ansible/latest/user_guide/intro_patterns.html#common-patterns) is a useful link for learning how to really make use of groups.
+
 
 ## Creating .my.cnf
 This should get you started:
