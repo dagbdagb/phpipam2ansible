@@ -12,8 +12,7 @@ This is not an introduction to ansible, dynamic inventories, or phpIPAM. And it 
 ## How to use it
 The script expects that you have a .my.cnf in your home directory, with credentials allowing you to access the phpIPAM database, under a [phpipamro] stanza. I suggest creating a read-only dbuser for this purpose. See below for further info.
 
-The script is primarily meant to be used by ansible, but it can be run by the user (you) with the --groups option, to list the groups. Out of the box, each device type is a group. See below for extending this.
-
+The script is primarily meant to be used by ansible, but it can be run by the user (you) with the --groups option, to list the groups. Out of the box, each device type is a group. See below for extending this. It is probably a good idea to run it by itself to verify that db communication works and that your modifications didn't break the script showhow.
 
 Some of the binaries in the ansible suite of tools take an '-i fooo' argument. 'fooo' can be a static inventory file, formatted according to the ansible documentation. Or it can be a dynamic inventory script, like this.
 
