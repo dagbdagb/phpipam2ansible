@@ -19,11 +19,11 @@ Some of the binaries in the ansible suite of tools take an '-i fooo' argument. '
 
     ansible all -i phpipam2ansible.py --list-hosts
 
-Rather than typing all that on every invocation of an ansible command, you can set the 'inventory' variable in ansible.cfg to point at this script.
+Rather than typing all that on every invocation of an ansible command, you can set the 'inventory' variable in ansible.cfg to point at this script. Now do:
 
     ansible all --list-hosts
 
-But the really cool guys and gals combine static and dynamic inventories. Now you set the 'inventory' variable in ansible.cfg to point at directory. Ansible will expect executables in this directory to take a '--list' option and produce a chunk of JSON output conforming to what ansible expects. Non-executable files are parsed as regular static inventory files.
+But the really cool guys and gals combine static and dynamic inventories. Now you set the 'inventory' variable in ansible.cfg to point at a directory. Ansible will expect executables in this directory to take a '--list' option and produce a chunk of JSON output conforming to what ansible expects. Non-executable files are parsed as regular static inventory files.
 
 I use static files to create my nested groups, as well as keeping some dummy hosts I use for other purposes.
 
